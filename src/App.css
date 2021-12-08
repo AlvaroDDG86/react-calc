@@ -17,7 +17,7 @@
   animation: gradient 15s ease infinite;
   padding: 1em;
   border-radius: 15px;
-  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.253);
+  box-shadow: 2px 3px 0px rgb(0, 89, 255);
   color: white;
   min-width: 450px;
 }
@@ -47,6 +47,8 @@
   align-items: baseline;
 }
 .btn {
+  z-index: 1;
+  position: relative;
   padding: 1em 2em;
   border-radius: 10px;
   color: white;
@@ -63,21 +65,21 @@
   background: red;
   box-shadow: 2px 3px 0px red;
 }
-.btn--danger:hover {
+/* .btn--danger:hover {
   color: red;
 }
 .btn:hover {
   color: rgb(0, 89, 255);
   background-color: white;
   box-shadow: 2px 3px 0px white;
-}
+} */
 .btn:active {
   transform: translate(3px, 3px);
   box-shadow: none;
 }
 .footer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   min-width: 6em;
   padding: 4px;
